@@ -44,3 +44,48 @@ In summary:
 Use **arrays** when you need fast random access, efficient searching, and a more memory-efficient structure for fixed-size collections.
 
 Use **linked lists** when you need frequent insertions and deletions, dynamic sizing, and reduced memory wastage in variable-sized collections.
+
+## Trees
+
+Every complex project ends up being a tree exercise.
+
+Some examples:
+- Your filesystem is a tree.
+- The DOM is a tree.
+- Trees are massively important in compilers. You have probably heard the term Abstract Syntax Tree.
+
+and there is much more...
+
+### Tree terminology
+
+- **root** - The most parent node. The First. Adam.
+- **height** - The longest path from the root to the most child node.
+- **binary tree** - A tree in which has at most 2 children, at least 0 children.
+- **general tree** - A tree with 0 or more children.
+- **binary search tree** - A tree in which has a specific ordering to the nodes and at most 2 children.
+- **leaves** - A node without children.
+- **balanced** - A tree is perfectly balanced when any node's left and right children have the same height.
+- **branching factor** - The amount of children a tree has.
+
+### Tree traversals
+
+There are different ways in which you can visit the nodes of a tree:
+
+- Pre order
+- In order
+- Post order
+
+These types of traversals are known as Depth First Search.
+But there is also another type: Breadth first search.
+
+Depth First Search (DFS) and Breadth First Search (BFS) are two fundamental algorithms used in the field of data structures and graph theory to explore and traverse graphs. Here's a clear and brief description of each:
+
+#### Depth First Search (DFS):
+
+- DFS is a graph traversal algorithm that starts at a designated node (usually the root) and explores as far as possible along each branch before backtracking.
+- It uses a **Stack** to keep track of the nodes to visit.
+
+#### Breadth First Search (BFS):
+
+- BFS is a graph traversal algorithm that explores all the neighbor nodes at the current level before moving to the next level.
+- It uses a **Queue** to keep track of the nodes to visit, ensuring that nodes closer to the source node are visited before distant ones.
