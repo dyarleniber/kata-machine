@@ -87,6 +87,15 @@ for testing each day.
 yarn test
 ```
 
+#### Testing specific files
+
+You don't have to enter the full path/name to your test file. The argument is interpreted as a regular expression.
+For example, the command below will run the test for the file `src/__tests__/LinearSearchList.ts`.
+
+```
+npx jest Linear
+```
+
 I have yet to create a testing strategy for next sets of algorithms, but we
 will get there when i cross that bridge.
 
