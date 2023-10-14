@@ -206,3 +206,21 @@ The Binary Search Tree is a classic when it comes to learning about trees. It's 
 
 This ordering property makes BSTs particularly useful for efficient searching for example. However, it's important to note that the efficiency of BST operations relies on maintaining a balanced tree structure, as an unbalanced BST can degrade to linear time complexity in the worst case.
 To mitigate this, various balanced BST variants, like AVL trees and Red-Black trees, are used to ensure balanced structures and consistent logarithmic time complexity.
+
+## Heap
+
+The simplest way to put it is a binary tree where every child and grand child is smaller (MaxHeap), or larger (MinHeap) than the current node.
+Heap uses a weak order (it's ordered, but it's not perfect ordered).
+
+Heaps are often used in algorithms such as Heap Sort and in data structures like Priority Queues. They're designed to provide quick access to the minimum or maximum element, which is why they're organized in a way that ensures the top element is always the one you need.
+A heap is one way to implement a priority queue. 
+
+- Whenever a node is added, we must adjust the tree.
+- Whenever a node is deleted, we must adjust the tree.
+- There is no traversing the tree.
+
+Some cool characteristics:
+
+- It is self balancing.
+- It can be used for priority.
+- Funnest data structure to implement, but easy to get wrong!
