@@ -224,3 +224,13 @@ Some cool characteristics:
 - It is self balancing.
 - It can be used for priority.
 - Funnest data structure to implement, but easy to get wrong!
+
+## Trie
+
+If its not a priority queue, its a trie.
+
+They are pronounced like Tree (its named after Re"trie"val Tree).
+So its a Trie tree (but people keep calling them try trees / prefix / digital tree).
+
+A Trie is like a special way of organizing words or data for quick and efficient searching.
+The easiest way to visualize a trie is to think of auto-complete (or even a cache).

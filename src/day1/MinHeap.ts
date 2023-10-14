@@ -24,6 +24,13 @@
  *
  *
  * Heap uses a weak order (it's ordered, but it's not perfect ordered).
+ *
+ * Important note: This implementation relies on the JavaScript Garbage Collector.
+ * In other programming languages (like C) we need to manually remove (free),
+ * the remained values in the array.
+ *
+ * TODO: Implement a Fibonacci Heap.
+ * TODO: Implement a Trie (which is not a priority queue).
  */
 export default class MinHeap {
     public length: number;
@@ -87,6 +94,7 @@ export default class MinHeap {
         return idx * 2 + 2;
     }
 
+    // O(log n)
     insert(value: number): void {
         // Steps:
         // 1. Insert the new value as the last element
@@ -97,6 +105,7 @@ export default class MinHeap {
         this.length++;
     }
 
+    // O(log n)
     delete(): number {
         // Steps:
         // 1. Remove the head element
