@@ -234,3 +234,44 @@ So its a Trie tree (but people keep calling them try trees / prefix / digital tr
 
 A Trie is like a special way of organizing words or data for quick and efficient searching.
 The easiest way to visualize a trie is to think of auto-complete (or even a cache).
+
+## Graph
+
+Many problems eventually become graph problems. And this is by far the largest section of algorithms.
+
+> All trees are graphs, not all graphs are trees.
+
+It consists of vertices (nodes) and edges (connections) that link these vertices. Graphs can be directed or undirected, weighted or unweighted, and can represent a variety of real-world systems, from social networks to transportation networks, and even abstract mathematical relationships.
+
+### Terminology of Graphs
+
+- **cycle**: When you start at Node(x), follow the links, and end back at Node(x).
+- **acyclic**: A graph that contains no cycles.
+- **connected**: When every node has a path to another node.
+- **directed**: When there is a direction to the connections.
+- **undirected**: !directed.
+- **weighted**: The edges have a weight associated with them. Think Maps.
+- **dag**: Directed, acyclic graph.
+- **node**: A point or vertex on the graph.
+- **edge**: The connection between two nodes.
+
+### Representation
+
+There are basically 2 ways to represent a graph.
+
+#### Adjacency list
+
+In an adjacency list each vertex maintains a list of its neighboring vertices. It's efficient for sparse graphs, consumes less memory, and is ideal for operations involving neighbors, such as finding adjacent vertices.
+
+#### Adjacency matrix
+
+An adjacency matrix is a 2D matrix representation of a graph where rows and columns correspond to vertices, and matrix entries indicate edge presence. It's well-suited for dense graphs, efficient for checking edge existence and vertex degrees, but consumes more memory, making it ideal for operations that involve traversing all edges in the graph.
+
+### Search
+
+Both DFS and BFS are also available when it comes to graphs.
+
+### Big O
+
+Big O is commonly stated in terms of **V** and **E** where V stands for vertices and E stands for edges.
+So O(V * E) means that we will check every vertex, and on every vertex we check every edge.

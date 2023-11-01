@@ -1,5 +1,7 @@
 // 21
 
+// O(v + e)
+
 function walk(
     graph: WeightedAdjacencyList,
     curr: number,
