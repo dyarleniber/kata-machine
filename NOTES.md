@@ -1,3 +1,32 @@
+## Data Structure and Algorithms covered
+
+- Time & Space Complexity
+- Arrays
+- Linear Search
+- Binary Search
+- Two Crystal Balls
+- Lists
+- Singly
+- Doubly
+- Queue
+- Stack
+- ArrayList
+- RingBuffers
+- Recursion
+- Maze Solving
+- QuickSort
+- Trees
+- Traversals, Pre Order, In Order, Post Order, BFS traversals
+- Comparing Binary Trees
+- Binary Search Trees
+- Heaps
+- Tries
+- Graphs
+- BFS / DFS
+- Dijkstra's Shortest Path
+- Map
+- LRU
+
 ## Data Structure and Algorithms Visualizations
 
 The best way to understand complex data structures is to see them in action. Here you can find interactive animations for a variety of data structures and algorithms: https://www.cs.usfca.edu/~galles/visualization/Algorithms.html
@@ -59,9 +88,9 @@ Use **arrays** when you need fast random access, efficient searching, and a more
 
 Use **linked lists** when you need frequent insertions and deletions, dynamic sizing, and reduced memory wastage in variable-sized collections.
 
-## Hash Tables
+## Hash Tables / Hash Maps
 
-A hash table is a data structure that maps keys to values. It employs a hash function to calculate an index in an array of buckets, enabling quick value retrieval.
+A hash map is a data structure that maps keys to values. It employs a hash function to calculate an index in an array of buckets, enabling quick value retrieval.
 
 Key Points:
 
@@ -70,6 +99,13 @@ Key Points:
 - Two primary collision resolution methods are Chaining and Open Addressing.
 
 Traditionally, hash tables are implemented using arrays of linked lists. When inserting a key/value pair, the key is hashed to find an array index, and the value is added to the linked list at that position.
+
+### Terminology of Hash Maps
+
+- **load factor**: The amount of data points vs the amount of storage (data.len / storage.capacity).
+- **key**: A value that is hashable and is used to look up data. The hash has to be consistent.
+- **value**: A value that is associated with a key.
+- **collision**: When 2 keys map to the same cell.
 
 ### Collision Resolution Methods
 
