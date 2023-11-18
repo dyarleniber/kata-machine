@@ -271,6 +271,15 @@ An adjacency matrix is a 2D matrix representation of a graph where rows and colu
 
 Both DFS and BFS are also available when it comes to graphs.
 
+### Dijkstra's Shortest Path
+
+Dijkstra's Shortest Path algorithm is a method for finding the shortest path between two nodes in a graph (it's based on Breadth First Search).
+It does not handle graphs with negative weights well. If a graph contains negative-weight edges, the algorithm may produce incorrect results because it assumes that adding a shorter edge always improves the path.
+
+> Dijkstra's algorithm is a greedy algorithm, always choosing the locally optimal solution at each step.
+
+> Bellman-Ford can be an alternative algorithm that address the negative numbers limitation. It can handle graphs with negative weights and detect negative cycles. However, its time complexity is higher than Dijkstra's algorithm.
+
 ### Big O
 
 Big O is commonly stated in terms of **V** and **E** where V stands for vertices and E stands for edges.
