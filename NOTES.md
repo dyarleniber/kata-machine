@@ -188,6 +188,14 @@ function containsCommonItem(arr1: string[], arr2: string[]): boolean {
 
 > Two separate loops are better than 2 nested loops.
 
+## LRU (Least Recently Used)
+
+LRU stands for "Least Recently Used," and it is a caching algorithm. The basic idea behind LRU is to keep track of the order in which items are accessed and, when the cache reaches its limit and needs to evict an item, remove the least recently used item first.
+
+Imagine you have a cache with limited space, and it stores data or items. Every time you access an item in the cache, you mark it as the most recently used. When the cache is full and you need to add a new item, you look at all the items in the cache and remove the one that hasn't been used for the longest time (i.e., the least recently used).
+
+This helps improve the efficiency of the cache by keeping the most frequently used items and discarding those that are used less often. LRU is commonly used in various computing scenarios where efficient management of limited resources, like cache memory, is crucial for optimizing performance.
+
 ## Trees
 
 Every complex project ends up being a tree exercise.
